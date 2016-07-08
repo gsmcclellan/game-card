@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="game-card">
+
+
+  <template>
+
+    <style>
+      /* local DOM styles go here */
+      :host {
+        display: inline-block;
+      }
+    </style>
+
+    <!-- local DOM goes here -->
+    <span>Game Card Demo</span>
+    
+    <div class="card-display-wrapper [[cardtype]]" >
+      <paper-card elevation=5 heading="Card Title">
+        <div class="subtype card-content">Subtype</div>
+        <div class="teamplay card-content" >Teamplay</div>
+        <div class="question card-content">Question</div>
+        <div class="instructions card-content">Instructions</div>
+        <div class="answer card-content"><div class="answer answer-title"></div><div class="answer answer-content">Answer</div>
+      </paper-card>
+    </div>
+    
+  </template>
+
+  <script>
+  Polymer({
+    is: 'game-card',
+  });
+  </script>
+
+</dom-module>
